@@ -26,10 +26,10 @@ previousOne.addEventListener('click', (e)=>{
     emailCard.style.zIndex = '2'
 })
 nextTwo.addEventListener('click',(e) =>{
-    let inputValue = document.getElementById('input-value');
+    let inputValue = document.getElementById('email-value');
     let name = inputValue.value;
     if(name === ''){
-        alert('Please type your name');
+        alert('Please type your email');
     }else{
         phoneCard.style.zIndex = '5';
         barThree.style. width = '100%'
@@ -39,4 +39,14 @@ nextTwo.addEventListener('click',(e) =>{
 //Card Three Event Listener
 previousTwo.addEventListener('click',(e)=>{
     phoneCard.style.zIndex = '1';
+})
+submitBtn.addEventListener('click',(e)=>{
+    let inputValue = document.getElementById('phone-value');
+    let name = inputValue.value;
+    if(name === ''){
+        alert('Please type your Phone number');
+    }else{
+        phoneCard.style.zIndex = '5';
+        barThree.style. width = '100%'
+    }
 })
