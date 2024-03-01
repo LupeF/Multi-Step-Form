@@ -29,14 +29,23 @@ body{
 h2{
     margin: 0;
 }
-
-#color-bar{
+/* Progress Bar settings */
+.color-bar{
     background-color: #F3F6F9;
     width: 100%;
     border-radius: 10px;
     height: 20px;
     margin: auto;
 }
+.color,
+.color-two,
+.color-three{
+    height: 20px;
+    width: 20%;
+    background-color: green;
+    border-radius: 10px;
+}
+/* Input styles */
 input{
     font-size: xx-large;
     border-radius: 5px;
@@ -44,10 +53,21 @@ input{
     outline: none;
     width: 100%;
 }
+input:required{
+    border: red solid 1px;
+}
+input::placeholder{
+    font-size: small;
+}
+/* Buttonn styles */
 .flex-btn{
     display: flex;
     width: 100%;
     
+}
+#previous-one{
+    background-color: #F3F6F9;
+    color: #39474D;
 }
 button{
     background-color: #39474D;
@@ -56,4 +76,20 @@ button{
     width: 100%;
     height: 4em;
     flex-grow: 1;
+    outline: none;
+    border: none;
+}
+#submit{
+    background-color: #6AD9A3;
+    border: none;
+}
+/* Stacking order styles */
+.name{
+    z-index: 3;
+}
+.email{
+    z-index: 2;
+}
+.phone{
+    z-index: 1;
 }
